@@ -27,11 +27,11 @@ function drawerCloseHandler(){
     sideDrawer.style.width="0";
 }
 
-function submitHandler(event){
+async function submitHandler(event){
     const titleObject={title:title.innerText}
     event.preventDefault();
     const payload=new FormData(formSubmit);
-    fetch('http://httpbin.org/post',{
+    await fetch('http://httpbin.org/post',{
         method:"POST",
         body:payload
     }).then(res=>res.json())
