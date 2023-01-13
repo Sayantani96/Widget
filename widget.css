@@ -39,6 +39,10 @@ body{
     color:#fff;
     margin-left:50px;
 }
+#title:focus{
+    border:0;
+    outline:none;
+}
 
 #widget-form{
     margin:35% 0 0 110px;
